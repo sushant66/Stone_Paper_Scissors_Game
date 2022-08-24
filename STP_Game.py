@@ -1,8 +1,8 @@
 import random
 user = "Y"
-print("Welcome to Stone Paper Scissors")
+print("Welcome to New Stone Paper Scissors Game")
 while(user == "Y"):
-    choice = input("Enter your choice S for Stone P for Paper and T for Scissors: ").upper()
+    choice = input("Press S for Stone \nPress P for Paper \nPress T for Scissors\n: ").upper()
     if choice != "S" and choice != "P" and choice != "T":
         print("Invalid Input")
         break
@@ -23,13 +23,13 @@ while(user == "Y"):
         elif cpu_choice == "T":
             return "Scissors"
             
-    print("CPU selected", cpu_select(cpu_choice))
+    print("Computer selected - ", cpu_select(cpu_choice))
 
     if (choice == "P" and cpu_choice == "S") or (choice == "T" and cpu_choice == "P") or (choice == "S" and cpu_choice == "T"):
-        print("You Win")
+        print("You Win, Congratulations!")
     elif (choice == "S" and cpu_choice == "P") or (choice == "P" and cpu_choice == "T") or (choice == "T" and cpu_choice == "S"):
-        print("You Lose")
+        print("You Lose, Better luck next time!")
     else:
-        print("No one Wins")
+        print("It's a draw")
 
     user = input("Play Again? Y for yes N for No: ").upper()
