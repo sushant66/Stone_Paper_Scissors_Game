@@ -31,9 +31,9 @@ while(user == "Y"):
         print("CPU selected", cpu_select(cpu_choice))
 
         if (choice == "P" and cpu_choice == "S") or (choice == "T" and cpu_choice == "P") or (choice == "S" and cpu_choice == "T"):
-            print("You Win")
+            print(str(name) + " Won")
         elif (choice == "S" and cpu_choice == "P") or (choice == "P" and cpu_choice == "T") or (choice == "T" and cpu_choice == "S"):
-            print("You Lose")
+            print("Computer Won")
         else:
             print("Its a draw")
 
